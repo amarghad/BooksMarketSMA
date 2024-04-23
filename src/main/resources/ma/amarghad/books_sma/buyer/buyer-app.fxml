@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.amarghad.books_sma.buyer.BuyerController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="29.0" prefWidth="520.0" spacing="8.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Acheteur" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Consulter et surveiller les vendeurs disponibles" />
+               </children>
+            </VBox>
+            <VBox prefHeight="259.0" prefWidth="520.0" spacing="10.0">
+               <children>
+                  <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendeurs disponibles">
+                     <font>
+                        <Font name="Arial Italic" size="12.0" />
+                     </font>
+                  </Text>
+                  <ListView fx:id="sellersListView" prefHeight="245.0" prefWidth="520.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <padding>
+      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+</BorderPane>
